@@ -11,7 +11,7 @@ A DevOps Project to display Hello World! when browse hostname or IP.
 - Docker Server
 - Jenkins Server
 
-Userdata for Jenkins Server
+Setup Jenkins Server and use below userdata while launch an EC2 instance.
 ```
 #!/bin/bash
 sudo yum update -y
