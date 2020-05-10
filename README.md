@@ -52,3 +52,13 @@ Host: Private IP.
 ```
 
 Once test connection is success!
+
+Setup Docker server and user the below userdata for launching the Docker Server.
+
+```
+#!/bin/bash
+sudo yum install docker -y
+sudo service docker restart
+sudo chkconfig docker on
+sudo usermod -a -G docker ec2-user
+```
