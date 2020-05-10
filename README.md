@@ -53,7 +53,7 @@ Host: Private IP.
 
 Once test connection is success!
 
-Setup Docker server and user the below userdata for launching the Docker Server.
+Now setup a Docker server and use the below userdata for launching the Server.
 
 ```
 #!/bin/bash
@@ -62,3 +62,5 @@ sudo service docker restart
 sudo chkconfig docker on
 sudo usermod -a -G docker ec2-user
 ```
+
+
