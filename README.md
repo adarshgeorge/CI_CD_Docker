@@ -29,7 +29,7 @@ Login to Jenkins Server and Obtain Admin Password.
 $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
-Access the Jenkins Dashboard (IP:8080) and install the suggested plugin.Also verify the below plugins are installed on Jenkins. 
+Access the Jenkins Dashboard (IP:8080) and install the suggested plugin. Also make sure the below plugins are installed on Jenkins. 
 
 ( Dashboard > Managed Plugins > Installed Plugin )
 
