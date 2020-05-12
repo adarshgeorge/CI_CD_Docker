@@ -14,16 +14,19 @@ Now setup a Docker server and use the below userdata for launching the Server.
 
 ```
 #!/bin/bash
+sudo yum update -y
 sudo yum install docker -y
 sudo service docker restart
 sudo chkconfig docker on
 sudo usermod -a -G docker ec2-user
+sudo yum install git -y
 ```
 
 Setup Jenkins Server and use below userdata while launch an EC2 instance.
 ```
 #!/bin/bash
 sudo yum update -y
+sudo yum install git -y
 sudo yum install java-1.8.0-openjdk-devel -y
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
@@ -79,6 +82,34 @@ Select Git  and add git repository
 
 
 https://github.com/adarshgeorge/CI_CD_Docker.git
+
+In Build
+
+Select **Send files or execute commands over SSH**
+
+```
+cd /home/ec2-user/DevOps/
+rm -rf *
+git clone https://github.com/adarshgeorge/CI_CD_Docker.git 
+```
+
+Once above build is success another build to create new container and expose the port. (Click on "Transferset") 
+
+```
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -a -q)
+cd /home/ec2-user/DevOps/CI_CD_Docker/
+docker build -t dockerweb .
+docker run -d -p 80:80 --name webserver dockerweb
+```
+
+Deploy a the Project! 
+
+(Dashboard > DevOps_Project_CI_CD > Build Now)
+
+
+
 
 
 
