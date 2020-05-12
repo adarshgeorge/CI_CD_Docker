@@ -110,9 +110,9 @@ Deploy a the Project!
 
 ![alt Test](https://github.com/adarshgeorge/CI_CD_Docker/blob/master/png/build.png)
 
-**Browse -->**  IP:8080 
+**Browse -->**  IP or Hostname
 
-![alt Test](https://github.com/adarshgeorge/CI_CD_Docker/blob/master/png/outtput.png)
+![alt Test](https://github.com/adarshgeorge/CI_CD_Docker/blob/master/png/output.png)
 
 
 **Now we need to make it as Continues Integration and Continous Deployment when there is change in Github repository**
@@ -171,7 +171,7 @@ Jenkins triggered the changes
 ![alt Test](https://github.com/adarshgeorge/CI_CD_Docker/blob/master/png/cicd.png)
 
 
-**Browse -->**  IP:8080 
+**Browse -->**  IP or Hostname
 
 ![alt Test](https://github.com/adarshgeorge/CI_CD_Docker/blob/master/png/finalout.png)
 
