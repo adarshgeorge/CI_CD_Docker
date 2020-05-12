@@ -31,6 +31,7 @@ sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
 sudo yum install jenkins -y
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
+sudo usermod -a -G jenkins ec2-user
 ```
 
 Login to Jenkins Server and Obtain Admin Password.
@@ -63,7 +64,22 @@ Host: Private IP.
 
 Once test connection is success!
 
+**Now create a new Job**   
 
+
+( Dashboard > New Item > Mentioned the projectname > Select Freestyle project )
+
+
+*Configuring...*
+
+
+In Source Code Management
+
+
+Select Git  and add git repository
+
+
+https://github.com/adarshgeorge/CI_CD_Docker.git
 
 
 
