@@ -75,7 +75,7 @@ Once test connection is success!
 *Configuring...*
 
 
-In Source Code Management
+**In Source Code Management**
 
 
 Select Git  and add git repository
@@ -83,7 +83,7 @@ Select Git  and add git repository
 
 https://github.com/adarshgeorge/CI_CD_Docker.git
 
-In Build
+**In Build**
 
 Select **Send files or execute commands over SSH**
 
