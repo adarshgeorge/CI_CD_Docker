@@ -104,7 +104,7 @@ docker build -t dockerweb .
 docker run -d -p 80:80 --name webserver dockerweb
 ```
 
-Deploy a the Project! 
+**Deploy a the Project!**
 
 (Dashboard > DevOps_Project_CI_CD > Build Now)
 
@@ -125,7 +125,7 @@ Now enable POL SCM and add below entry. Which means Jenkins check every
 H/2 * * * *
 ```
 
-Modifying the index page
+**Modifying the index page**
 
 ```
 $ git status
