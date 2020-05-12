@@ -163,9 +163,7 @@ Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/adarshgeorge/CI_CD_Docker.git
    f35a7fc..621f53a  master -> master
-
 $
-
 ```
 
 Jenkins triggered the changes
