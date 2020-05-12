@@ -124,3 +124,57 @@ Now enable POL SCM and add below entry. Which means Jenkins check every
 ```
 H/2 * * * *
 ```
+
+Modifying the index page
+
+```
+$ git status
+
+On branch master
+Your branch is up to date with 'orgin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   web/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+$ git add .
+
+warning: LF will be replaced by CRLF in web/index.html.
+The file will have its original line endings in your working directory
+
+
+$ git commit -m"Added logo"
+
+[master 621f53a] Added logo
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 427 bytes | 427.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/adarshgeorge/CI_CD_Docker.git
+   f35a7fc..621f53a  master -> master
+
+$
+
+```
+
+Jenkins triggered the changes
+
+![alt Test](https://github.com/adarshgeorge/CI_CD_Docker/blob/master/png/cicd.png)
+
+
+**Browse -->**  IP:8080 
+
+![alt Test](https://github.com/adarshgeorge/CI_CD_Docker/blob/master/png/finalout.png)
+
+**That's it!**
