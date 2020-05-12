@@ -108,8 +108,19 @@ Deploy a the Project!
 
 (Dashboard > DevOps_Project_CI_CD > Build Now)
 
+![alt Test](https://github.com/adarshgeorge/CI_CD_Docker/blob/master/png/build.png)
+
+**Browse -->**  IP:8080 
+
+![alt Test](https://github.com/adarshgeorge/CI_CD_Docker/blob/master/png/outtput.png)
 
 
+**Now we need to make it as Continues Integration and Continous Deployment when there is change in Github repository**
 
+(Dashboard > DevOps_Project_CI_CD > Configure)
 
+Now enable POL SCM and add below entry. Which means Jenkins check every
 
+```
+H/2 * * * *
+```
