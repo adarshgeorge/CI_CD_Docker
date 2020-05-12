@@ -60,7 +60,7 @@ User: ec2-user
 Pass: ec2-passwd
 Host: Private IP.
 ```
-
+![alt Test](https://github.com/adarshgeorge/CI_CD_Docker/blob/master/png/test_connections.png)
 Once test connection is success!
 
 **Now create a new Job**   
