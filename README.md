@@ -11,6 +11,16 @@ A DevOps Project to display Hello World! when browse hostname or IP.
 - Docker Server
 - Jenkins Server
 
+Now setup a Docker server and use the below userdata for launching the Server.
+
+```
+#!/bin/bash
+sudo yum install docker -y
+sudo service docker restart
+sudo chkconfig docker on
+sudo usermod -a -G docker ec2-user
+```
+
 Setup Jenkins Server and use below userdata while launch an EC2 instance.
 ```
 #!/bin/bash
@@ -53,14 +63,7 @@ Host: Private IP.
 
 Once test connection is success!
 
-Now setup a Docker server and use the below userdata for launching the Server.
 
-```
-#!/bin/bash
-sudo yum install docker -y
-sudo service docker restart
-sudo chkconfig docker on
-sudo usermod -a -G docker ec2-user
-```
+
 
 
