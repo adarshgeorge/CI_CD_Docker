@@ -88,7 +88,7 @@ https://github.com/adarshgeorge/CI_CD_Docker.git
 Select **Send files or execute commands over SSH**
 
 ```
-cd /home/ec2-user/DevOps/
+cd /home/ec2-user/
 rm -rf *
 git clone https://github.com/adarshgeorge/CI_CD_Docker.git 
 ```
@@ -99,7 +99,7 @@ Once above build is success another build to create new container and expose the
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 docker rmi $(docker images -a -q)
-cd /home/ec2-user/DevOps/CI_CD_Docker/
+cd /home/ec2-user/CI_CD_Docker/
 docker build -t dockerweb .
 docker run -d -p 80:80 --name webserver dockerweb
 ```
